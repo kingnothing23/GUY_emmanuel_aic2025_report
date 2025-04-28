@@ -1,0 +1,56 @@
+* NGSPICE file created from SKY_OTA.ext - technology: sky130A
+
+.subckt JNWTR_CAPX1__0 A B
+X0 B A sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+.ends
+
+.subckt JNWATR_NCH_4C5F0 D G S B a_1056_n40#
+X0 D G S B sky130_fd_pr__nfet_01v8 ad=0.528 pd=2.26 as=0.848 ps=4.26 w=1.6 l=0.94
+X1 S G D B sky130_fd_pr__nfet_01v8 ad=0.848 pd=4.26 as=0.528 ps=2.26 w=1.6 l=0.94
+.ends
+
+.subckt JNWATR_PCH_4C5F0 D G S B
+X0 S G D B sky130_fd_pr__pfet_01v8 ad=0.848 pd=4.26 as=0.528 ps=2.26 w=1.6 l=0.94
+X1 D G S B sky130_fd_pr__pfet_01v8 ad=0.528 pd=2.26 as=0.848 ps=4.26 w=1.6 l=0.94
+.ends
+
+.subckt JNWTR_RES8 N P 0
+X0 a_1260_1800# a_1476_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X1 a_396_1800# a_612_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X2 P a_1476_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X3 a_828_1800# a_612_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X4 N a_180_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X5 a_828_1800# a_1044_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X6 a_396_1800# a_180_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X7 a_1260_1800# a_1044_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+.ends
+
+.subckt JNWTR_RPPO8 P N B
+XXA1 N P B JNWTR_RES8
+.ends
+
+.subckt JNWTR_CAPX1 A B
+X0 B A sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+.ends
+
+.subckt JNWTR_CAPX4 A B
+XXB1 A B JNWTR_CAPX1
+XXA1 A B JNWTR_CAPX1
+XXB2 A B JNWTR_CAPX1
+XXA2 A B JNWTR_CAPX1
+.ends
+
+.subckt SKY_OTA VDD Diff_Out V_minus VSS V_pluss
+Xxg1 xg3/G Diff_Out JNWTR_CAPX1__0
+Xxg2 Diff_Out xg2/G VSS VSS xg2/a_1056_n40# JNWATR_NCH_4C5F0
+Xxg3 Diff_Out xg3/G VDD VDD JNWATR_PCH_4C5F0
+Xxd1 xg3/G V_pluss xd1/S VSS VSS JNWATR_NCH_4C5F0
+Xxd2 xg3/G xd2/G VDD VDD JNWATR_PCH_4C5F0
+Xxc2 xd2/G xd2/G VDD VDD JNWATR_PCH_4C5F0
+Xxc1 xd1/S xg2/G VSS VSS VSS JNWATR_NCH_4C5F0
+Xxc3 xd2/G V_minus xd1/S VSS VSS JNWATR_NCH_4C5F0
+Xxa1 xg2/G xg2/G VSS VSS VSS JNWATR_NCH_4C5F0
+Xxa2 VDD xg2/G VSS JNWTR_RPPO8
+Xxf Diff_Out VSS JNWTR_CAPX4
+.ends
+

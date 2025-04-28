@@ -1,0 +1,73 @@
+* NGSPICE file created from SKYOP.ext - technology: sky130A
+
+.subckt JNWTR_CAPX1 A B
+X0 B A sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+.ends
+
+.subckt JNWATR_NCH_4C1F2 D G S B a_1056_n40#
+X0 S G D B sky130_fd_pr__nfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X1 D G S B sky130_fd_pr__nfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+.ends
+
+.subckt JNWATR_PCH_4C5F0 D G S B
+X0 S G D B sky130_fd_pr__pfet_01v8 ad=0.848 pd=4.26 as=0.528 ps=2.26 w=1.6 l=0.94
+X1 D G S B sky130_fd_pr__pfet_01v8 ad=0.528 pd=2.26 as=0.848 ps=4.26 w=1.6 l=0.94
+.ends
+
+.subckt JNWATR_PCH_4C1F2 D G S B
+X0 S G D B sky130_fd_pr__pfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X1 D G S B sky130_fd_pr__pfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+.ends
+
+.subckt JNWTR_RES2 N P 0
+X0 N a_180_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X1 P a_180_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+.ends
+
+.subckt JNWTR_RPPO2 P N B
+XXA1 N P B JNWTR_RES2
+.ends
+
+.subckt JNWTR_RES16 N P 0
+X0 a_2556_1800# a_2340_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X1 a_1260_1800# a_1476_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X2 a_396_1800# a_612_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X3 a_2556_1800# a_2772_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X4 a_1692_1800# a_1476_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X5 a_828_1800# a_612_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X6 a_2988_1800# a_2772_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X7 N a_180_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X8 a_2988_1800# a_3204_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X9 a_2124_1800# a_1908_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X10 a_828_1800# a_1044_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X11 a_1692_1800# a_1908_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X12 a_396_1800# a_180_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X13 P a_3204_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X14 a_2124_1800# a_2340_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+X15 a_1260_1800# a_1044_n120# 0 sky130_fd_pr__res_high_po w=0.36 l=7.36
+.ends
+
+.subckt JNWTR_RPPO16 P N B
+XXA1 N P B JNWTR_RES16
+.ends
+
+.subckt JNWATR_NCH_2C1F2 D G S B a_928_n40#
+X0 S G D B sky130_fd_pr__nfet_01v8 ad=0.4704 pd=2.9 as=0.2784 ps=1.54 w=0.96 l=0.22
+X1 D G S B sky130_fd_pr__nfet_01v8 ad=0.2784 pd=1.54 as=0.4704 ps=2.9 w=0.96 l=0.22
+.ends
+
+.subckt SKYOP VSS VIN+ VIN- VOUT VDD
+Xxd1 xe/D VOUT JNWTR_CAPX1
+Xxd2 VOUT xe/S VSS VSS VSS JNWATR_NCH_4C1F2
+Xxc2 xc3/G VIN- xc2/S xc2/S JNWATR_PCH_4C5F0
+Xxb1 xc2/S xd/G VDD VDD JNWATR_PCH_4C1F2
+Xxc3 xc3/G xc3/G VSS VSS xc3/a_1056_n40# JNWATR_NCH_4C1F2
+Xxb2 xe/S VIN+ xc2/S xc2/S JNWATR_PCH_4C5F0
+Xxa1 xd/G xd/G VDD VDD JNWATR_PCH_4C1F2
+Xxb3 xe/S xc3/G VSS VSS VSS JNWATR_NCH_4C1F2
+Xxa2 xd/G xa3/P VSS JNWTR_RPPO2
+Xxa3 xa3/P VSS VSS JNWTR_RPPO16
+Xxd VOUT xd/G VDD VDD JNWATR_PCH_4C1F2
+Xxe xe/D VDD xe/S VSS VSS JNWATR_NCH_2C1F2
+.ends
+

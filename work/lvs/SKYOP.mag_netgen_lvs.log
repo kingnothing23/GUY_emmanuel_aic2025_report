@@ -1,0 +1,22 @@
+Netgen 1.5.291 compiled on Sun Jan 12 13:58:51 CET 2025
+Warning: netgen command 'format' use fully-qualified name '::netgen::format'
+Warning: netgen command 'global' use fully-qualified name '::netgen::global'
+Reading netlist file lvs/SKYOP.mag.spi
+Call to undefined subcircuit sky130_fd_pr__cap_mim_m3_1
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__nfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__pfet_01v8
+Creating placeholder cell definition.
+Call to undefined subcircuit sky130_fd_pr__res_high_po
+Creating placeholder cell definition.
+Reading netlist file cdl/SKYOP.mag.spice
+-1
+    while executing
+"netgen::readnet $file2"
+    (procedure "lvs" line 75)
+    invoked from within
+"lvs {lvs/SKYOP.mag.spi SKYOP.mag} {cdl/SKYOP.mag.spice SKYOP.mag} /opt/pdk/share/pdk/sky130A/libs.tech/netgen/sky130A_setup.tcl lvs/SKYOP.mag_lvs.log"
+    ("eval" body line 1)
+    invoked from within
+"eval $argv"
