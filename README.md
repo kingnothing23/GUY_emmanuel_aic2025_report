@@ -1,7 +1,7 @@
 # GUY_emmanuel_aic2025_report
 Appendix for the report  for the aic2025 course
 
-can be finded in the design folder :
+ in the design folder one can find :
 - the designs in xschem
 - the layouts in magic
 - The symbols files for xschem
