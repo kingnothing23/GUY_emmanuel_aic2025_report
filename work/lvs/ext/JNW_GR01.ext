@@ -1,0 +1,497 @@
+timestamp 1744459438
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use JNWTR_CAPX1 xb3 1 0 13664 0 1 13200
+use JNWATR_NCH_4C5F0 xb2 1 0 13664 0 1 12400
+use SKYOP xb1 1 0 13664 0 1 0
+use temo_effected_current xa1 1 0 0 0 1 0
+port "VSS" 2 12002 3374 13176 4504 m1
+port "VDD" 1 12100 5494 13100 6536 m1
+port "reset" 3 10810 12452 11970 13372 m1
+port "cmp" 4 7952 12380 9844 13726 m1
+port "vref" 5 5458 12566 6850 13854 m1
+node "VSS" 5 8001.47 12002 3374 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2849570 18956 185680 2508 1170960 10238 0 0 0 0 0 0
+node "VDD" 7 9140.67 12100 5494 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1581228 8860 1838157 15344 1495095 15136 0 0 0 0 0 0
+node "m1_14336_12618#" 1 640.856 14336 12618 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 29952 696 31104 714 126288 2042 0 0 0 0 0 0
+node "reset" 1 2432.78 10810 12452 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1350152 8244 0 0 0 0 0 0 0 0 0 0
+node "cmp" 3 7468.11 7952 12380 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4887460 22432 0 0 0 0 0 0 0 0 0 0
+node "m1_2473_11378#" 7 15013.7 2473 11378 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 480668 4646 505432 4852 6875754 46100 1405628 12288 0 0 0 0
+node "vref" 9 19796.5 5458 12566 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 6232173 24376 334117 3990 4623804 43842 0 0 0 0 0 0
+node "li_13631_12527#" 15 1116.21 13631 12527 v0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 8836 376 35164 1068 101035 2110 13456 464 103880 2172 0 0 0 0
+substrate "0" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "li_13631_12527#" "reset" 24.552
+cap "cmp" "m1_14336_12618#" 5.53042
+cap "m1_14336_12618#" "m1_2473_11378#" 124.93
+cap "cmp" "m1_2473_11378#" 627.586
+cap "m1_14336_12618#" "reset" 4.48766
+cap "cmp" "reset" 85.0795
+cap "m1_2473_11378#" "reset" 293.192
+cap "m1_14336_12618#" "li_13631_12527#" 46.7904
+cap "cmp" "li_13631_12527#" 10.9471
+cap "cmp" "vref" 56.9762
+cap "li_13631_12527#" "m1_2473_11378#" 97.6959
+cap "m1_2473_11378#" "vref" 1244.86
+cap "VDD" "VSS" 2197.91
+cap "VDD" "vref" 0.0464176
+cap "xa1/xb1/D" "xa1/xc1/XA1/a_180_n120#" 2.54677
+cap "xa1/xb1/D" "xa1/xc1/XA1/a_n36_n120#" 2.02883
+cap "xa1/xc1/B" "xa1/xc1/XA1/a_612_n120#" 4.42653
+cap "xa1/xc1/B" "xa1/xc1/XA1/a_180_n120#" 3.77624
+cap "xb1/xa1/B" "VSS" 3.96192
+cap "xa1/xc1/B" "VSS" 11.8027
+cap "VSS" "xb1/xa1/S" 0.507716
+cap "xb1/xa1/G" "VDD" 0.0115193
+cap "xb1/VDD" "xb1/xa1/G" 0.0184308
+cap "xb1/VDD" "xb1/xa1/G" 0.0129054
+cap "xb1/xa1/B" "VSS" 3.39146
+cap "xa1/xc1/B" "VSS" 21.4546
+cap "VDD" "xb1/xa1/G" 0.608834
+cap "VDD" "xb1/xa2/B" 76.4911
+cap "VDD" "xb1/xa1/S" 22.6114
+cap "VDD" "xb1/xa2/XA1/a_180_n120#" 0.455157
+cap "VDD" "xb1/xa2/XA1/a_n36_n120#" 0.983206
+cap "VSS" "xb1/xa2/B" 0.182138
+cap "VSS" "xb1/xa1/S" 2.1635
+cap "xb1/xa2/XA1/a_612_n120#" "xb1/VDD" 16.3644
+cap "xb1/xa1/a_160_778#" "xb1/VDD" 4.12597
+cap "xb1/xa2/XA1/a_n36_n120#" "xb1/VDD" 28.8942
+cap "xb1/VDD" "xb1/xa1/a_160_n22#" 0.822714
+cap "xb1/VDD" "xb1/xa1/a_160_138#" 0.694728
+cap "xb1/xa2/B" "xb1/VDD" 98.2801
+cap "xb1/VDD" "xb1/xa2/XA1/a_180_n120#" 47.7552
+cap "xb1/VDD" "xb1/xa2/XA1/N" 0.2313
+cap "xb1/xa1/G" "xb1/VDD" 193.597
+cap "xb1/xa2/XA1/P" "xb1/VDD" 0.2313
+cap "xb1/VDD" "xb1/VIN+" 0.0543502
+cap "xb1/xa2/XA1/a_612_n120#" "xb1/VDD" 0.190495
+cap "xb1/VDD" "xb1/xa2/XA1/a_180_n120#" 0.00811208
+cap "xb1/xa2/B" "xb1/VDD" 2.01261
+cap "xb1/VDD" "xb1/xa1/G" 116.75
+cap "xb1/VDD" "xb1/xb1/G" 0.411599
+cap "xb1/VIN+" "xb1/VDD" 0.0264562
+cap "xb1/VIN+" "xb1/xb2/S" 3.77401
+cap "xb1/VIN+" "xb1/xb3/D" 0.766269
+cap "xb1/VIN+" "xb1/xb3/G" 0.457539
+cap "xb1/xb3/D" "xb1/VIN+" 0.766269
+cap "xb1/xb3/G" "xb1/VIN+" 0.00585398
+cap "xb1/xc3/a_160_n22#" "xb1/VIN-" 1.01125
+cap "xb1/VIN-" "xb1/xc2/a_160_778#" 1.01125
+cap "xb1/VIN-" "xb1/xc3/G" 97.5282
+cap "xb1/VIN-" "xb1/xc3/a_160_138#" 1.01125
+cap "xb1/VIN-" "xb1/xb1/D" 68.678
+cap "xb1/xc3/a_160_618#" "xb1/VIN-" 1.68973
+cap "xb1/VIN-" "xb1/xc3/S" 68.64
+cap "xa1/xc2/B" "VSS" 20.966
+cap "xa1/xc2/B" "VSS" 29.5854
+cap "xb1/xa2/P" "VSS" 5.31629
+cap "xb1/xa2/P" "VDD" 4.04777
+cap "xb1/xa2/N" "VSS" 0.17978
+cap "xb1/xa2/N" "VDD" 0.40837
+cap "VSS" "xb1/xa2/XA1/a_n36_n120#" 1.2347
+cap "VDD" "xb1/xa2/XA1/a_n36_n120#" 6.34326
+cap "VSS" "xb1/xa2/B" 11.7387
+cap "VDD" "xb1/xa2/B" 29.6819
+cap "xb1/xa2/P" "xb1/xa2/XA1/a_n36_n120#" -3.55271e-15
+cap "xb1/xa2/P" "xb1/VDD" 1.43646
+cap "xb1/xa2/XA1/a_n36_n120#" "xb1/VDD" 2.71969
+cap "VSS" "xb1/xa2/P" 5.19713
+cap "VSS" "xb1/xa2/XA1/a_n36_n120#" 2.75302
+cap "xb1/VDD" "xb1/m1_137_8341#" 3.55271e-15
+cap "xb1/VDD" "xb1/VIN+" 0.0284385
+cap "xb1/xb3/S" "xb1/VIN+" 94.6535
+cap "xb1/xb3/a_160_138#" "xb1/VIN+" 0.271306
+cap "xb1/xb3/G" "xb1/VIN+" 58.9763
+cap "xb1/xb3/a_160_778#" "xb1/VIN+" 1.53494
+cap "xb1/xb3/D" "xb1/VIN+" 11.9667
+cap "xb1/xb3/a_160_618#" "xb1/VIN+" 0.285763
+cap "xb1/VSS" "xb1/VIN+" 1.47149
+cap "xb1/xb3/S" "xb1/xb3/G" 1.13687e-13
+cap "xb1/xb3/a_160_n22#" "xb1/VIN+" 0.271306
+cap "xb1/xb3/S" "xb1/VIN-" 9.60694
+cap "xb1/VIN-" "xb1/xb3/D" 0.0227325
+cap "xb1/xb3/a_160_778#" "xb1/VIN-" 0.163215
+cap "xb1/xb3/S" "xb1/xb3/G" 1.13687e-13
+cap "xb1/xb3/D" "xb1/VIN+" 11.9021
+cap "xb1/VIN+" "xb1/xb3/G" 0.00585398
+cap "xb1/xb3/a_160_618#" "xb1/VIN-" 0.163215
+cap "xb1/VIN-" "xb1/xb3/a_160_778#" 0.450692
+cap "xb1/xb3/D" "xb1/VIN-" 1.76478
+cap "xb1/xc3/a_160_n22#" "xb1/VIN-" 0.783571
+cap "xb1/xc3/G" "xb1/VIN-" 28.7736
+cap "xb1/VIN-" "xb1/xc3/S" 137.289
+cap "xb1/xc3/a_160_618#" "xb1/VIN-" 1.22359
+cap "xb1/xc3/a_160_138#" "xb1/VIN-" 0.616643
+cap "xb1/VIN-" "xb1/xb3/a_160_618#" 0.43035
+cap "xb1/xc2/S" "xb1/VIN-" 1.52801
+cap "xb1/xc3/a_160_778#" "xb1/VIN-" 9.1578
+cap "xa1/xc2/B" "VSS" 0.247539
+cap "xa1/xc2/XA1/a_1044_n120#" "VSS" 1.13145
+cap "VDD" "xa1/xc2/XA1/a_1908_n120#" 0.0791557
+cap "xa1/xc2/B" "VDD" 0.853496
+cap "VSS" "xa1/xc2/XA1/a_1908_n120#" 15.6293
+cap "xa1/xc2/XA1/a_1476_n120#" "VSS" 2.34135
+cap "xa1/xc2/B" "VSS" 60.675
+cap "xa1/xc2/XA1/a_1908_n120#" "VDD" 1.07573
+cap "xa1/xc2/B" "VSS" 38.5379
+cap "VDD" "xb1/VDD" 8.94213
+cap "VSS" "xb1/xa2/N" 12.177
+cap "xb1/xa2/P" "VDD" 4.0929
+cap "xb1/xa2/XA1/a_n36_n120#" "VDD" 1.56769
+cap "xb1/xa2/P" "VSS" 10.7741
+cap "xb1/xa2/XA1/a_n36_n120#" "VSS" 1.44326
+cap "xa1/xc2/B" "VDD" 40.5636
+cap "xb1/xa2/N" "VDD" 10.2217
+cap "VSS" "xb1/xa2/P" 10.2565
+cap "xb1/xa3/B" "xb1/xa2/N" 5.68434e-14
+cap "xb1/xa3/B" "xb1/VDD" -5.68434e-14
+cap "VSS" "xb1/xa2/N" 11.0804
+cap "VDD" "xb1/xa2/N" 2.8483
+cap "xb1/xa2/XA1/a_n36_n120#" "VSS" 3.21806
+cap "VDD" "xb1/VDD" 7.36873
+cap "VSS" "xb1/xa3/B" 0.0942209
+cap "xb1/m1_137_8341#" "xb1/VDD" -3.55271e-15
+cap "xb1/VIN+" "xb1/xb3/D" 14.1874
+cap "xb1/VIN+" "xb1/VSS" 361.198
+cap "xb1/VIN+" "xb1/xb3/D" 12.0646
+cap "xb1/VSS" "vref" 9.07679
+cap "xb1/xb3/D" "vref" 3.69118
+cap "xb1/VSS" "vref" 8.04792
+cap "xa1/VDD" "xa1/xc2/XA1/a_n36_n120#" 0.326686
+cap "xa1/xc2/N" "xa1/VDD" 0.224635
+cap "VDD" "xa1/xc2/N" 0.758903
+cap "xa1/xc2/XA1/a_828_1800#" "VSS" 0.217316
+cap "xa1/xc2/XA1/a_1908_n120#" "VSS" 11.0639
+cap "VDD" "xa1/xc2/P" 0.836221
+cap "xa1/xc2/B" "VDD" 29.477
+cap "xa1/xc2/P" "VSS" 3.05552
+cap "xa1/xc2/B" "VSS" 52.233
+cap "xa1/xc2/XA1/a_1260_1800#" "VDD" 0.974928
+cap "xa1/xc2/XA1/a_1260_1800#" "VSS" 3.82269
+cap "xa1/xc2/XA1/a_1908_n120#" "VDD" 8.5466
+cap "xa1/xc2/XA1/a_1908_n120#" "VDD" 0.197053
+cap "xb1/VDD" "VDD" 7.15534
+cap "xa1/xc2/XA1/a_1260_1800#" "VDD" 0.00338562
+cap "xb1/xa2/N" "VDD" 21.3915
+cap "xb1/xa3/XA1/a_n36_n120#" "VDD" 2.45641
+cap "VDD" "xa1/xc2/B" 25.4575
+cap "xa1/xc2/P" "VDD" 0.00854693
+cap "xb1/xa3/N" "xa1/xc2/B" 0.74678
+cap "xb1/xa3/B" "xb1/xa2/N" -3.55271e-15
+cap "VDD" "xb1/xa2/N" 21.3915
+cap "VDD" "xb1/VDD" 14.6658
+cap "xb1/xa2/N" "xb1/xa3/N" 0.638431
+cap "VDD" "xb1/xa3/XA1/a_n36_n120#" 6.24052
+cap "xb1/xa3/XA1/a_n36_n120#" "xb1/xa2/N" -1.42109e-14
+cap "xb1/xa3/N" "xb1/xa3/XA1/a_1044_n120#" 0.000186458
+cap "xb1/xa3/B" "xb1/xa3/XA1/a_1044_n120#" 0.0201375
+cap "xb1/xa2/N" "xb1/xa3/B" 0.0865915
+cap "m1_2473_11378#" "xb1/xa3/XA1/a_3636_n120#" 6.2697
+cap "xb1/xa3/P" "m1_2473_11378#" 8.4098
+cap "xb1/xa3/XA1/a_3204_n120#" "m1_2473_11378#" 11.5852
+cap "xb1/xa3/XA1/a_3636_n120#" "m1_2473_11378#" 6.86984
+cap "xb1/xa3/P" "m1_2473_11378#" 18.4885
+cap "xb1/m1_2116_9256#" "m1_2473_11378#" 5.3455
+cap "xb1/xa3/XA1/a_2340_n120#" "m1_2473_11378#" 1.0716
+cap "xb1/VSS" "m1_2473_11378#" 255.98
+cap "xb1/xa3/XA1/a_2772_n120#" "m1_2473_11378#" 5.73182
+cap "xb1/m1_2116_9256#" "m1_2473_11378#" 4.06453
+cap "xb1/VSS" "vref" 9.41898
+cap "vref" "xb1/VSS" 8.62874
+cap "vref" "xb1/m1_2116_9256#" 3.69118
+cap "vref" "xa1/Vref" 5.11897
+cap "xa1/VDD" "xa1/xc2/B" 0.0357718
+cap "vref" "xa1/VDD" -0.000447468
+cap "xa1/Vref" "xa1/VDD" 44.1977
+cap "xa1/Vref" "vref" 4.01196
+cap "xa1/xc2/B" "xa1/VDD" 173.456
+cap "xa1/xc2/N" "xa1/VDD" 278.287
+cap "xa1/xc2/XA1/a_n36_n120#" "xa1/VDD" 1.02269
+cap "xa1/xc2/P" "xa1/VDD" 59.1127
+cap "vref" "xa1/xc2/P" 4.01196
+cap "xa1/xc2/P" "VDD" 65.2012
+cap "xa1/xc2/XA1/a_828_1800#" "VDD" 83.6151
+cap "xa1/xc2/XA1/a_396_1800#" "VDD" 83.6151
+cap "VDD" "xa1/xc2/B" 154.911
+cap "xa1/xc2/XA1/a_1260_1800#" "VDD" 83.6151
+cap "xa1/xc2/P" "vref" 4.01196
+cap "VDD" "xa1/xc2/N" 1.30037
+cap "xa1/xc2/XA1/a_828_1800#" "VSS" 0.046435
+cap "xa1/xc2/XA1/a_1260_1800#" "VSS" 1.52591
+cap "VDD" "xa1/xc2/XA1/a_1908_n120#" 5.49741
+cap "vref" "xa1/xc2/P" 0.696362
+cap "xa1/xc2/B" "VDD" 145.197
+cap "VDD" "xa1/xc2/P" 475.757
+cap "VSS" "xa1/xc2/B" 5.14531
+cap "VSS" "xa1/xc2/P" 2.99244
+cap "xa1/xc2/B" "xa1/xc2/P" 5.68434e-14
+cap "xa1/xc2/XA1/a_1260_1800#" "VDD" 0.0938295
+cap "xa1/xc2/B" "xb1/xa3/N" 81.7099
+cap "VDD" "xb1/xa3/XA1/a_n36_n120#" 0.299721
+cap "xb1/xd/B" "VDD" 8.1517
+cap "VDD" "xa1/xc2/P" 0.503982
+cap "VDD" "xb1/xa3/N" 0.89316
+cap "xa1/xc2/B" "VDD" 6.34834
+cap "xb1/xa3/N" "VDD" 2.88123
+cap "xb1/xa3/N" "xb1/xa3/XA1/a_n36_n120#" 8.29425
+cap "xb1/xa3/N" "xb1/li_410_4210#" 32.616
+cap "xb1/xa3/N" "xb1/xd/B" 213.773
+cap "xb1/xa3/XA1/a_1044_n120#" "xb1/xa3/N" 2.49609
+cap "xb1/xa3/N" "xb1/xa3/XA1/a_612_n120#" 6.65578
+cap "xb1/xa3/XA1/a_n36_n120#" "VDD" 1.27447
+cap "xb1/xa3/N" "xb1/xa3/XA1/a_396_1800#" 15.5098
+cap "vref" "xb1/xa3/XA1/a_n36_n120#" 0.0377143
+cap "VDD" "xb1/xd/B" 8.82409
+cap "xb1/xa3/N" "xb1/xa3/XA1/a_180_n120#" 5.17672
+cap "xb1/xa3/N" "xb1/xa3/XA1/a_828_1800#" 15.5098
+cap "xb1/xa3/N" "xb1/xa3/B" 8.59387
+cap "xb1/xa3/P" "xb1/xa3/B" 4.41585
+cap "xb1/m1_137_8341#" "xb1/xa3/B" 0.811675
+cap "xb1/xa3/B" "xb1/xa3/XA1/a_1044_n120#" 4.1917
+cap "xb1/xa3/XA1/a_1260_1800#" "xb1/xa3/B" 1.82404
+cap "m1_2473_11378#" "xb1/xa3/P" 12.387
+cap "m1_2473_11378#" "xb1/xa3/XA1/a_3636_n120#" 0.58911
+cap "xb1/xa3/XA1/a_3636_n120#" "vref" 0.15487
+cap "m1_2473_11378#" "xb1/xa3/XA1/a_2556_1800#" 4.15329
+cap "m1_2473_11378#" "xb1/xa3/P" 37.7942
+cap "m1_2473_11378#" "xb1/m1_2116_9256#" 5.3455
+cap "m1_2473_11378#" "xb1/xa3/XA1/a_2988_1800#" 7.71725
+cap "xb1/xa3/XA1/a_3636_n120#" "m1_2473_11378#" 1.59784e-15
+cap "m1_2473_11378#" "xb1/VSS" 462.388
+cap "vref" "xb1/m1_2116_9256#" 2.2636
+cap "vref" "xb1/VSS" 1.95074
+cap "xb1/m1_2116_9256#" "m1_2473_11378#" 4.06453
+cap "vref" "xb1/VSS" 5.48835
+cap "vref" "xb1/m1_2116_9256#" 3.69118
+cap "xa1/VDD" "xa1/Vref" 27.5825
+cap "xa1/m1_688_9039#" "xa1/Vref" 0.688161
+cap "xa1/xa2/xg3/B" "xa1/Vref" 0.578066
+cap "xa1/Vref" "xa1/VDD" 0.0374596
+cap "vref" "xa1/xc2/P" 8.50594
+cap "vref" "xa1/xc2/P" 8.50594
+cap "xa1/xc2/P" "vref" 2.22944
+cap "xb1/xd1/A" "vref" 4.16901
+cap "vref" "xa1/xc2/B" 16.0275
+cap "vref" "xb1/xd/S" 68.1836
+cap "xa1/xc2/B" "xb1/xa3/N" 0.0418085
+cap "xb1/xd/G" "vref" 32.4481
+cap "vref" "xb1/xe/D" 31.4399
+cap "vref" "xb1/xd/a_160_n22#" 4.08594
+cap "vref" "xb1/xd/D" 14.9123
+cap "vref" "xb1/xa3/XA1/a_828_1800#" 11.2792
+cap "vref" "xb1/xa3/XA1/a_396_1800#" 11.2792
+cap "xb1/xa3/N" "xb1/xe/B" 0.278775
+cap "vref" "xb1/xd/a_160_778#" 0.606926
+cap "vref" "xb1/xd/G" 155.208
+cap "vref" "xb1/xa3/XA1/a_n36_n120#" 0.0207095
+cap "xb1/xd/S" "vref" 700.895
+cap "vref" "xb1/xe/B" 42.3641
+cap "vref" "xb1/xd/a_160_618#" 0.877856
+cap "vref" "xb1/xd/a_160_138#" 1.549
+cap "xb1/xa3/N" "vref" 11.437
+cap "vref" "xb1/xd/S" 196.523
+cap "vref" "xb1/xe/a_160_778#" 0.634667
+cap "xb1/xe/a_160_n22#" "vref" 2.78901
+cap "xb1/xa3/XA1/a_1260_1800#" "vref" 10.6693
+cap "xb1/xd/G" "vref" 48.8943
+cap "xb1/xe/a_160_618#" "vref" 0.572719
+cap "vref" "xb1/xa3/XA1/a_1692_1800#" 11.2792
+cap "xb1/xa3/XA1/a_2124_1800#" "vref" 11.2792
+cap "xb1/xe/S" "vref" 471.133
+cap "xb1/xe/a_160_138#" "vref" 1.18265
+cap "vref" "xb1/xa3/N" 172.769
+cap "xb1/xe/D" "vref" 35.4447
+cap "vref" "xb1/xe/S" 413.868
+cap "vref" "xb1/xa3/P" 15.3333
+cap "xb1/VSS" "vref" 247.589
+cap "m1_2473_11378#" "xb1/xa3/P" 0.251801
+cap "vref" "xb1/xa3/XA1/a_2988_1800#" 11.2792
+cap "vref" "xb1/xa3/XA1/a_2556_1800#" 11.2792
+cap "xb1/VSS" "m1_2473_11378#" 0.531518
+cap "vref" "xb1/m1_2116_9256#" 413.868
+cap "m1_2473_11378#" "xb1/m1_2116_9256#" 143.525
+cap "xb1/xa3/XA1/a_2988_1800#" "m1_2473_11378#" 4.28049
+cap "m1_2473_11378#" "xb1/xa3/XA1/a_2556_1800#" 2.47391
+cap "m1_2473_11378#" "xb1/VSS" 230.75
+cap "vref" "xb1/VSS" 193.122
+cap "m1_2473_11378#" "xb1/xa3/P" 9.19611
+cap "m1_2473_11378#" "xb1/m1_2116_9256#" 2.12374
+cap "vref" "xb1/m1_2116_9256#" 96.3463
+cap "xb1/m1_2116_9256#" "vref" 2.1503
+cap "xa1/OUT" "xa1/VDD" 2.10342
+cap "xa1/OUT" "xa1/VDD" 3.39733
+cap "xa1/Vref" "xa1/VDD" 1.19211
+cap "xa1/VDD" "xa1/Vref" 7.04196
+cap "xb1/xd/S" "xb1/xd1/A" -1.49403
+cap "vref" "xb1/VOUT" 0.456398
+cap "xb1/VOUT" "xb1/xd/G" 0.0993292
+cap "xb1/xd/S" "vref" 1.84517
+cap "vref" "xb1/xd1/A" 4.16901
+cap "xb1/xd/S" "xb1/VOUT" 1.38312
+cap "xb1/xd/G" "xb1/xd1/A" -0.145138
+cap "xb1/xd/S" "xb1/xe/B" -3.49091
+cap "xb1/xd/S" "xb1/xe/D" -6.78958
+cap "xb1/xd/G" "xb1/xe/S" -1.16364
+cap "xb1/xd/S" "xb1/xd2/a_160_n22#" -0.215044
+cap "xb1/xe/D" "xb1/xd/a_160_778#" -2.30214
+cap "vref" "xb1/xd/a_160_n22#" 2.68919
+cap "xb1/xe/D" "vref" 31.4399
+cap "xb1/xd/G" "xb1/xe/D" -1.48555
+cap "xb1/xd/G" "xb1/xd2/a_160_n22#" -0.0716812
+cap "xb1/xd/S" "xb1/VOUT" -2.15621
+cap "xb1/VOUT" "xb1/xd/a_160_778#" 2.13343
+cap "xb1/VOUT" "vref" 16.8347
+cap "xb1/VOUT" "xb1/xd/G" 0.371923
+cap "xb1/xd/S" "vref" 2.14991
+cap "xb1/VOUT" "xb1/xe/B" -1.27141
+cap "xb1/VOUT" "xb1/xe/D" 3.67214
+cap "xb1/VOUT" "xb1/xa3/XA1/a_396_1800#" -0.356737
+cap "xb1/xe/S" "xb1/xe/D" -0.872726
+cap "vref" "xb1/xe/a_160_n22#" 2.60637
+cap "xb1/xe/D" "xb1/xe/B" -0.126102
+cap "vref" "xb1/xe/D" 28.9095
+cap "xb1/xe/D" "xb1/xd/S" -0.461957
+cap "vref" "xb1/xe/S" 0.14775
+cap "m1_2473_11378#" "xb1/xe/B" 4.62189
+cap "xb1/xa3/B" "m1_2473_11378#" 5.36705
+cap "xa1/xe3/G" "xa1/OUT" 0.0038644
+cap "xa1/xe3/a_160_778#" "xa1/OUT" 0.0038644
+cap "xa1/OUT" "xa1/xe3/G" 0.683638
+cap "xa1/Vref" "xa1/OUT" 3.13548
+cap "xa1/xe3/a_160_778#" "xa1/OUT" 0.0713319
+cap "xa1/VDD" "xa1/OUT" 2.28902
+cap "xa1/xe1/B" "xa1/OUT" 6.19002
+cap "xa1/VDD" "xa1/OUT" 3.69553
+cap "xa1/OUT" "xa1/Vref" 31.9639
+cap "xa1/Vref" "xa1/OUT" 57.8168
+cap "xa1/Vref" "m1_2473_11378#" 13.4512
+cap "xb3/A" "xb1/VOUT" 2.32017
+cap "xb1/xd1/A" "xb1/VOUT" 109.554
+cap "xb1/xd/S" "xb1/VOUT" 10.2397
+cap "xb3/A" "xb1/xd2/a_160_618#" 0.552059
+cap "xb1/xd2/a_160_778#" "xb3/A" 1.01183
+cap "xb1/xd/G" "xb1/VOUT" 0.223124
+cap "xb3/B" "xb1/VOUT" 82.9251
+cap "xb3/A" "xb3/B" 21.2764
+cap "xb1/xd1/A" "xb3/B" -1.1861
+cap "xb1/xd2/G" "xb1/VOUT" 0.42269
+cap "xb1/xd2/G" "xb3/A" 2.89716
+cap "xb1/xe/S" "xb1/xe/D" -6.98915
+cap "xb1/xd2/a_160_778#" "xb1/VOUT" 0.487409
+cap "xb3/A" "xb1/xd2/a_160_778#" 0.189865
+cap "xb1/VOUT" "xb1/xd2/a_160_618#" 0.719008
+cap "xb3/A" "xb1/xd2/a_160_618#" 0.317317
+cap "xb3/B" "xb1/xd2/a_160_778#" 0.477574
+cap "xb1/xd2/a_160_138#" "xb1/xe/D" 4.44089e-16
+cap "xb1/VOUT" "xb1/xe/D" 182.652
+cap "xb1/xd/a_160_618#" "xb1/VOUT" 0.412252
+cap "xb3/A" "xb1/xe/D" 5.57926
+cap "xb2/G" "xb1/xe/D" 3.3731
+cap "xb3/B" "xb1/xe/D" -18.5816
+cap "xb1/VOUT" "xb1/xd2/a_160_n22#" 38.3042
+cap "xb1/xd2/a_160_778#" "xb2/a_160_n22#" 15.2661
+cap "xb1/VOUT" "xb1/xe/S" 31.1381
+cap "xb3/A" "xb1/xe/S" 6.53129
+cap "xb1/VOUT" "xb1/xd/a_160_n22#" 0.133678
+cap "xb1/xd/a_160_778#" "xb1/xe/S" -0.0716812
+cap "xb1/VOUT" "xb1/xd2/a_160_138#" 4.16846
+cap "xb2/a_160_n22#" "xb1/xe/D" 1.36045
+cap "xb3/A" "xb1/VOUT" -1.11605
+cap "xb1/VOUT" "xb2/G" 2.59812
+cap "xb1/VOUT" "xb1/xd/a_160_138#" 0.17848
+cap "xb1/xe/S" "xb1/xd/G" -1.16364
+cap "xb1/xd/S" "xb1/xe/S" -0.319994
+cap "xb1/xd/a_160_778#" "xb1/VOUT" 1.19229
+cap "xb3/B" "xb1/VOUT" 85.0141
+cap "xb3/A" "xb3/B" 0.681508
+cap "xb3/B" "xb1/xd/a_160_778#" -0.215044
+cap "xb1/VOUT" "xb1/xd/G" 2.47845
+cap "xb1/xd/S" "xb1/VOUT" 15.0838
+cap "xb1/VOUT" "xb2/a_160_n22#" 1.46845
+cap "xb1/xd2/a_160_618#" "xb1/xe/D" 2.22045e-16
+cap "xb3/B" "xb1/xd/S" -4.43031
+cap "xb1/xd2/a_160_n22#" "xb1/xe/D" -6.41057
+cap "xb1/xe/B" "m1_2473_11378#" 4.62189
+cap "xb1/xe/B" "xb1/VOUT" 0.00262149
+cap "m1_2473_11378#" "xb1/XJNWATR_NCH_2CTAPBOT7/a_n96_120#" 5.09317
+cap "xb2/G" "xb3/A" 3.55271e-15
+cap "xb2/G" "xb3/B" 0.171404
+cap "xb2/a_160_n22#" "xb3/A" 1.25251
+cap "xb3/A" "xb1/xd2/G" 1.47211
+cap "xb3/A" "xb2/G" 18.3391
+cap "xb1/VOUT" "xb1/xd2/G" 0.42269
+cap "xb1/xd2/G" "xb2/G" 1.2623
+cap "xb3/A" "xb3/B" 71.214
+cap "xb1/xd2/G" "xb3/B" 0.435405
+cap "xb1/VOUT" "xb3/B" 1.0785
+cap "xb3/B" "xb2/G" 165.919
+cap "xb2/a_160_778#" "xb3/A" 0.61761
+cap "xb1/xd1/A" "xb1/xd2/G" -0.163631
+cap "xb1/xd1/A" "xb3/B" -0.813747
+cap "xb1/xd1/A" "xb3/B" 2.50453
+cap "xb3/A" "xb2/G" 92.3559
+cap "xb3/B" "xb2/a_160_778#" 6.08177
+cap "xb3/A" "xb1/xd2/a_160_778#" 1.65405
+cap "xb1/xd2/G" "xb2/a_160_n22#" 17.2111
+cap "xb3/A" "xb1/xd2/a_160_n22#" 0.0072124
+cap "xb3/A" "xb1/xd1/A" 4.70359
+cap "xb3/A" "xb2/a_160_778#" 42.1987
+cap "xb1/xd2/G" "xb1/VOUT" 5.2333
+cap "xb3/B" "xb1/xd2/a_160_618#" 0.659708
+cap "xb3/B" "xb2/a_160_n22#" 84.8599
+cap "xb1/xd2/G" "xb3/B" 113.564
+cap "xb3/A" "xb1/xd2/a_160_618#" 0.603958
+cap "xb1/VOUT" "xb3/B" 3.15306
+cap "xb1/xd2/a_160_778#" "xb2/a_160_n22#" 15.2661
+cap "xb1/xd2/G" "xb2/G" 28.9879
+cap "xb3/A" "xb2/a_160_n22#" 4.02446
+cap "xb3/A" "xb1/xd2/G" 48.102
+cap "xb3/A" "xb1/xd2/a_160_138#" 0.017199
+cap "xb3/A" "xb1/VOUT" 3.16777
+cap "xb1/xd2/G" "xb1/xd1/A" -2.02591
+cap "xb2/G" "xb3/B" 167.471
+cap "xb1/xd2/G" "xb2/a_160_778#" 0.589086
+cap "xb1/xd2/a_160_778#" "xb3/B" 1.49308
+cap "xb3/A" "xb3/B" 325.632
+cap "xb1/xd2/a_160_n22#" "xb3/B" 0.20372
+cap "xb3/B" "xb3/A" 2.72746
+cap "xb3/A" "xb1/xd2/G" 2.22807
+cap "xb1/VSS" "m1_2473_11378#" 1.08481
+cap "m1_2473_11378#" "xb1/VSS" 1.08365
+cap "xb3/A" "xb2/G" -1.52466
+cap "xb3/A" "xb3/B" 124.668
+cap "xb3/A" "xb3/B" 27.7415
+cap "xb3/A" "xb2/G" -0.722207
+cap "xb3/A" "xb1/m1_131_12123#" 0.541997
+cap "xb3/B" "xb3/A" 2.23317
+cap "xb1/m1_131_12123#" "xb3/A" 1.64258
+cap "m1_2473_11378#" "xb1/VSS" 0.600433
+merge "xb2/D" "xb3/A" -9999.65 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -297510 -3568 0 0 -3461984 -25150 -1405628 -12288 0 0 0 0
+merge "xb3/A" "m1_14336_12618#"
+merge "m1_14336_12618#" "xa1/OUT"
+merge "xa1/OUT" "xb1/VIN+"
+merge "xb1/VIN+" "m1_2473_11378#"
+merge "xb1/xa3/N" "xb1/xa3/B" -1544.98 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -8836 -376 -22656 -620 -11448 -428 0 0 -30210 -782 0 0 0 0
+merge "xb1/xa3/B" "xb1/VSS"
+merge "xb1/VSS" "xa1/xc1/B"
+merge "xa1/xc1/B" "xa1/xb1/D"
+merge "xa1/xb1/D" "VSS"
+merge "VSS" "xb2/S"
+merge "xb2/S" "xb3/0"
+merge "xb3/0" "xb1/0"
+merge "xb1/0" "xa1/0"
+merge "xa1/0" "0"
+merge "0" "xb2/B"
+merge "xb2/B" "xb3/B"
+merge "xb3/B" "xb1/xe/B"
+merge "xb1/xe/B" "xb1/xd2/S"
+merge "xb1/xd2/S" "xb1/xd2/B"
+merge "xb1/xd2/B" "li_13631_12527#"
+merge "xa1/Vref" "xb1/VIN-" -13234 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -2039729 -9893 0 0 -3811422 -35788 0 0 0 0 0 0
+merge "xb1/VIN-" "vref"
+merge "xb2/G" "reset" -512.339 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -221908 -1730 0 0 0 0 0 0 0 0 0 0
+merge "xb1/VOUT" "cmp" -6649.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4364196 -18838 0 0 0 0 0 0 0 0 0 0
+merge "xa1/VDD" "xb1/VDD" -6774.25 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1574214 -8836 -997917 -8197 -789873 -7985 0 0 0 0 0 0
+merge "xb1/VDD" "VDD"
