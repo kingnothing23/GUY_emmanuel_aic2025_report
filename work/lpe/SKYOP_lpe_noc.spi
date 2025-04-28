@@ -1,0 +1,44 @@
+* NGSPICE file created from SKYOP.ext - technology: sky130A
+
+* Replacing the lpe port list (../tech/scripts/fixlpe)
+.subckt SKYOP VDD VIN- VIN+ VOUT VSS
+*.subckt SKYOP VSS VIN+ VIN- VOUT VDD
+X0 a_796_6992# a_580_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X1 VDD xa2.P xa2.P VDD sky130_fd_pr__pfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X2 xb3.D VDD xe.D VSS sky130_fd_pr__nfet_01v8 ad=0.4704 pd=2.9 as=0.2784 ps=1.54 w=0.96 l=0.22
+X3 a_3388_6992# a_3172_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X4 a_2092_6992# a_1876_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X5 a_2956_6992# a_2740_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X6 xb2.S VIN- xb3.G xb2.S sky130_fd_pr__pfet_01v8 ad=0.848 pd=4.26 as=0.528 ps=2.26 w=1.6 l=0.94
+X7 xb2.S VIN+ xb3.D xb2.S sky130_fd_pr__pfet_01v8 ad=0.848 pd=4.26 as=0.528 ps=2.26 w=1.6 l=0.94
+X8 a_1660_6992# a_1444_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X9 VSS xb3.G xb3.D VSS sky130_fd_pr__nfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X10 xa2.P xa2.P VDD VDD sky130_fd_pr__pfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+X11 xe.D VDD xb3.D VSS sky130_fd_pr__nfet_01v8 ad=0.2784 pd=1.54 as=0.4704 ps=2.9 w=0.96 l=0.22
+X12 a_1228_6992# a_1444_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X13 xa2.P a_580_1560# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X14 VSS a_580_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X15 a_1228_6992# a_1012_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X16 VDD xa2.P VOUT VDD sky130_fd_pr__pfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X17 VDD xa2.P xb2.S VDD sky130_fd_pr__pfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X18 a_2956_6992# a_3172_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X19 VSS xb3.G xb3.G VSS sky130_fd_pr__nfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X20 a_2524_6992# a_2740_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X21 a_2524_6992# a_2308_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X22 VOUT xa2.P VDD VDD sky130_fd_pr__pfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+X23 a_2092_6992# a_2308_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X24 xa2.N a_580_1560# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X25 xb3.D xb3.G VSS VSS sky130_fd_pr__nfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+X26 xb3.G xb3.G VSS VSS sky130_fd_pr__nfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+X27 a_796_6992# a_1012_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X28 VOUT xe.D sky130_fd_pr__cap_mim_m3_1 l=5 w=5
+X29 xb3.D VIN+ xb2.S xb2.S sky130_fd_pr__pfet_01v8 ad=0.528 pd=2.26 as=0.848 ps=4.26 w=1.6 l=0.94
+X30 xb3.G VIN- xb2.S xb2.S sky130_fd_pr__pfet_01v8 ad=0.528 pd=2.26 as=0.848 ps=4.26 w=1.6 l=0.94
+X31 xa2.N a_3604_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X32 VSS xb3.D VOUT VSS sky130_fd_pr__nfet_01v8 ad=0.784 pd=4.18 as=0.464 ps=2.18 w=1.6 l=0.22
+X33 xb2.S xa2.P VDD VDD sky130_fd_pr__pfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+X34 a_3388_6992# a_3604_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X35 a_1660_6992# a_1876_5072# VSS sky130_fd_pr__res_high_po w=0.36 l=7.36
+X36 VOUT xb3.D VSS VSS sky130_fd_pr__nfet_01v8 ad=0.464 pd=2.18 as=0.784 ps=4.18 w=1.6 l=0.22
+.ends
+

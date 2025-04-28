@@ -1,0 +1,162 @@
+
+Circuit 1 cell sky130_fd_pr__res_high_po and Circuit 2 cell sky130_fd_pr__res_high_po are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__res_high_po is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__res_high_po       |Circuit 2: sky130_fd_pr__res_high_po       
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__res_high_po and sky130_fd_pr__res_high_po are equivalent.
+
+Circuit 1 cell sky130_fd_pr__cap_mim_m3_1 and Circuit 2 cell sky130_fd_pr__cap_mim_m3_1 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__cap_mim_m3_1 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__cap_mim_m3_1      |Circuit 2: sky130_fd_pr__cap_mim_m3_1      
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__cap_mim_m3_1 and sky130_fd_pr__cap_mim_m3_1 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8 and Circuit 2 cell sky130_fd_pr__pfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8         |Circuit 2: sky130_fd_pr__pfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8 and sky130_fd_pr__pfet_01v8 are equivalent.
+Flattening unmatched subcell SKYOP in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWATR_PCH_4C1F2 in circuit JNW_GR01 (1)(3 instances)
+Flattening unmatched subcell JNWATR_NCH_4C1F2 in circuit JNW_GR01 (1)(3 instances)
+Flattening unmatched subcell JNWATR_NCH_2C1F2 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWATR_PCH_4C5F0 in circuit JNW_GR01 (1)(2 instances)
+Flattening unmatched subcell JNWTR_RPPO16 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_RES16 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_CAPX1 in circuit JNW_GR01 (1)(2 instances)
+Flattening unmatched subcell JNWTR_RPPO2 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_RES2 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWATR_NCH_4C5F0 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell temo_effected_current in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWATR_PCH_4C5F0 in circuit JNW_GR01 (1)(5 instances)
+Flattening unmatched subcell JNWTR_RPPO2 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_RES2 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_RPPO8 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_RES8 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell SKY_OTA in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWATR_NCH_4C5F0 in circuit JNW_GR01 (1)(5 instances)
+Flattening unmatched subcell JNWATR_PCH_4C5F0 in circuit JNW_GR01 (1)(3 instances)
+Flattening unmatched subcell JNWTR_RPPO8 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_RES8 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_CAPX4 in circuit JNW_GR01 (1)(1 instance)
+Flattening unmatched subcell JNWTR_CAPX1 in circuit JNW_GR01 (1)(5 instances)
+
+Class JNW_GR01 (0):  Merged 26 parallel devices.
+Class JNW_GR01 (0):  Merged 32 series devices.
+Class JNW_GR01 (1):  Merged 3 parallel devices.
+Class JNW_GR01 (1):  Merged 32 series devices.
+Subcircuit summary:
+Circuit 1: JNW_GR01                        |Circuit 2: JNW_GR01                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (26->13)           |sky130_fd_pr__pfet_01v8 (13)               
+sky130_fd_pr__nfet_01v8 (20->10)           |sky130_fd_pr__nfet_01v8 (10)               
+sky130_fd_pr__cap_mim_m3_1 (7->4)          |sky130_fd_pr__cap_mim_m3_1 (7->4)          
+sky130_fd_pr__res_high_po (36->4)          |sky130_fd_pr__res_high_po (36->4)          
+(no matching element)                      |r (1)                                      
+Number of devices: 31 **Mismatch**         |Number of devices: 32 **Mismatch**         
+Number of nets: 19 **Mismatch**            |Number of nets: 20 **Mismatch**            
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: JNW_GR01                        |Circuit 2: JNW_GR01                        
+
+---------------------------------------------------------------------------------------
+(no matching net)                          |Net: temo_effected_current:a1/net1         
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |  r/(end_a|end_b) = 1                      
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: xb3.A                                 |Net: net1                                  
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  r/(end_a|end_b) = 1                      
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 1            
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: xa1.xe1.G                             |Net: temo_effected_current:a1/GATE         
+  sky130_fd_pr__pfet_01v8/2 = 3            |  sky130_fd_pr__pfet_01v8/2 = 3            
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__cap_mim_m3_1/2 = 1         |  sky130_fd_pr__cap_mim_m3_1/2 = 1         
+  sky130_fd_pr__nfet_01v8/(1|3) = 1        |  sky130_fd_pr__nfet_01v8/(1|3) = 1        
+  sky130_fd_pr__cap_mim_m3_1/1 = 1         |  sky130_fd_pr__cap_mim_m3_1/1 = 1         
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 9        |  sky130_fd_pr__pfet_01v8/(1|3) = 9        
+  sky130_fd_pr__pfet_01v8/4 = 11           |  sky130_fd_pr__pfet_01v8/4 = 11           
+  sky130_fd_pr__res_high_po/(1|2) = 1      |  sky130_fd_pr__res_high_po/(1|2) = 1      
+  sky130_fd_pr__nfet_01v8/2 = 1            |  sky130_fd_pr__nfet_01v8/2 = 1            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: JNW_GR01                        |Circuit 2: JNW_GR01                        
+
+---------------------------------------------------------------------------------------
+(no matching instance)                     |Instance: temo_effected_current:a1/r:1     
+                                           |  (end_a,end_b) = (4,2)                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:12       |Instance: temo_effected_current:a1/JNWATR_ 
+  (1,3) = (22,4)                           |  (1,3) = (22,2)                           
+  2 = 7                                    |  2 = 7                                    
+  4 = 22                                   |  4 = 22                                   
+---------------------------------------------------------------------------------------
+Netlists do not match.
+Port matching may fail to disambiguate symmetries.
+
+Subcircuit pins:
+Circuit 1: JNW_GR01                        |Circuit 2: JNW_GR01                        
+-------------------------------------------|-------------------------------------------
+reset                                      |reset                                      
+VSS                                        |VSS                                        
+vref                                       |vref                                       
+cmp                                        |cmp                                        
+VDD                                        |VDD                                        
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes JNW_GR01 and JNW_GR01 are equivalent.
+
+Final result: Netlists do not match.
+Port matching may fail to disambiguate symmetries.

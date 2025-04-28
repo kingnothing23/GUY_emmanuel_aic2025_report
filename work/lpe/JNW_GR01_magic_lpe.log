@@ -1,0 +1,58 @@
+
+Magic 8.3 revision 513 - Compiled on Sun Jan 12 13:58:38 CET 2025.
+Starting magic under Tcl interpreter
+Using the terminal as the console.
+Using NULL graphics device.
+Processing system .magicrc file
+Sourcing design .magicrc for technology sky130A ...
+2 Magic internal units = 1 Lambda
+Input style sky130(): scaleFactor=2, multiplier=2
+The following types are not handled by extraction and will be treated as non-electrical types:
+    ubm 
+Scaled tech values by 2 / 1 to match internal grid scaling
+Loading sky130A Device Generator Menu ...
+Loading "lpe/JNW_GR01_lpe.tcl" from command line.
+Cell JNW_GR01 read from path ../design/JNW_GR01_SKY130A
+Cell JNWTR_CAPX1 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_CAPX1 geometry by factor of 2
+Cell JNWATR_NCH_4C5F0 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_4C5F0 geometry by factor of 2
+Cell SKYOP read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_GR01_SKY130A
+Cell JNWATR_PCH_4CTAPBOT read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_PCH_4CTAPBOT geometry by factor of 2
+Cell JNWTR_RPPO2 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_RPPO2 geometry by factor of 2
+Cell JNWTR_RES2 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_RES2 geometry by factor of 2
+Cell JNWATR_PCH_4C1F2 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_PCH_4C1F2 geometry by factor of 2
+Cell JNWATR_NCH_4C1F2 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_4C1F2 geometry by factor of 2
+Cell JNWATR_PCH_4C5F0 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_PCH_4C5F0 geometry by factor of 2
+Cell JNWATR_NCH_4CTAPTOP read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_4CTAPTOP geometry by factor of 2
+Cell JNWTR_RPPO16 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_RPPO16 geometry by factor of 2
+Cell JNWTR_RES16 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_RES16 geometry by factor of 2
+Cell JNWATR_NCH_2C1F2 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_2C1F2 geometry by factor of 2
+Cell JNWATR_NCH_2CTAPBOT read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_2CTAPBOT geometry by factor of 2
+Cell JNWATR_NCH_2CTAPTOP read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_2CTAPTOP geometry by factor of 2
+Cell temo_effected_current read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_GR01_SKY130A
+Cell JNWTR_RPPO8 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_RPPO8 geometry by factor of 2
+Cell JNWTR_RES8 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_RES8 geometry by factor of 2
+Cell JNWATR_PCH_4CTAPTOP read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_PCH_4CTAPTOP geometry by factor of 2
+Cell SKY_OTA read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_GR01_SKY130A
+Cell JNWATR_NCH_4CTAPBOT read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_ATR_SKY130A
+Scaled magic input cell JNWATR_NCH_4CTAPBOT geometry by factor of 2
+Cell JNWTR_CAPX4 read from path /home/manu/pro/aicex/ip/jnw_gr01_sky130a/design/JNW_GR01_SKY130A/../JNW_TR_SKY130A
+Scaled magic input cell JNWTR_CAPX4 geometry by factor of 2
+Extracting JNW_GR01_flat into lpe/ext/JNW_GR01_flat.ext:
+exttospice finished.
