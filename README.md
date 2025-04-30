@@ -2,9 +2,6 @@
 
 This repository serves as the appendix for the report submitted as part of the AIC2025 course.
 
-📄 **Main report appendix link:**  
-[Github repository for the report appendix](https://github.com/kingnothing23/GUY_emmanuel_aic2025_report/tree/main)
-
 ## Repository Structure
 
 Inside the project folder, you will find the following:
@@ -32,4 +29,4 @@ Inside the project folder, you will find the following:
 ## Related Group Repository
 
 You can also find the group's project repository here:  
-🔗 [Group GitHub repository](https://github.com/analogicus/jnw_gr01_sky130a/tree/main)
+ [Group GitHub repository](https://github.com/analogicus/jnw_gr01_sky130a/tree/main)
